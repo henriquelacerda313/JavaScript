@@ -37,11 +37,11 @@
         <h1>Olá, mundo!</h1> <!--comentario em HTML-->
         <p>Me livrei da maldição !!!</p>
         <p>
-        <h1>Principais tipos Primitivos</h1>
-
-        <p>NUMBER</p>
-        <p>STRING</p>
-        <p>BOOLEAN</p>
+         
+            <h1>INTERPOLAÇÃO</h1>
+            <p>
+                A interpolação de strings é um recurso bem interessante, presente em diversas linguagens. No JavaScript, é uma alternativa mais prática para manipular string sem a necessidade de fazer concatenação, porque para textos maiores, concatenar pode ser um pouco trabalhoso.
+            </p>
 
 
 
@@ -57,9 +57,19 @@
 
         var soma = n1 + n2 
 
-        window.alert("a soma dos valores é " + soma) // + é concatenação, para realizar a operação, precisa transformar a string para Number, coma  tag Number
+        window.alert(`a soma dos valores entre ${n1} e ${n2} é de ${soma}`)
+        
+        // + é concatenação, para realizar a operação, precisa transformar a string para Number, coma  tag Number
 
         // transformar numeros em string usa tag String(var)
+
+        // templete string - `${}`
+        // concatenação - ``+ var
+        // não faz interpolação - "texto var"
+
+        // var.length - quantos caracters a string tem
+        // var.toUpperCase() - letras maiusculas
+        // var.toLowerCase() - letras minusculas
 
 
 
