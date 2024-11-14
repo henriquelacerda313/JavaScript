@@ -23,6 +23,10 @@ margin: auto;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
 }
 
+img.manhaedit {
+    width: 500px;
+}
+
 footer {
     color: white;
     text-align: center;
@@ -31,6 +35,6 @@ footer {
 
     div#foto {
 
-        width: 200px ;
-        height: 200px ;
+        width: 100px ;
+        height: 400px ;
     }
