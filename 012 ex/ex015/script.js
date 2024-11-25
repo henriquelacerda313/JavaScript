@@ -3,9 +3,10 @@ function verificar () {
     var data  = new Date()
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano')
-    var res  = document.querySelector('div#res')
+    var res  = document.getElementById('res')
     
-    if (fano.value.length == 0 || Number(fano.value) > ano) { window.alert('[ERRO] Verifique os dados e tente novamente')}
+    if (fano.value.length == 0 || Number(fano.value) > ano)
+         { window.alert('[ERRO] Verifique os dados e tente novamente')}
 
     // Operador || OU OR - Este operador retorna verdadeiro se pelo menos um dos operandos for verdadeiro. Se ambos os operandos forem falsos, então o resultado será falso. 
 
@@ -14,10 +15,10 @@ function verificar () {
         var idade = ano - Number(fano.value)
         var gênero = ''
         var img  = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        img.setAttribute('id', 'foto')  }
 
         if (fsex[0].Checked) {
-            gênero = 'Homem'
+            gênero = 'Homem' 
 
             if (idade >= 0 && idade < 10) {
                 img.setAttribute('src', 'menino.jpg')
@@ -32,7 +33,7 @@ function verificar () {
 
         }
 
-    }
+    
 
     if (fsex[1].Checked) {
         gênero = 'Mulher'
