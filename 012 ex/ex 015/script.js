@@ -17,7 +17,7 @@ function verificar () {
 
             var gênero = ''
 
-            var img = document.createElement('img')
+            var img = document.createElement('img') // outra maneira de inserir imagens alem do img do HMTL
 
             img.setAttribute('id', 'foto')
 
@@ -52,7 +52,7 @@ function verificar () {
 
             res.style.textAlign = 'center'
             res.innerHTML = `Detectamos ${gênero} com ${idade} anos `
-            res.appendChild(img)
+            res.appendChild(img)  // as imagens funcionam com esse comando
             
 
 
