@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="1">
-    <title>modelo de exercicios</title>
+   <!--   <meta http-equiv="refresh" content="1">   --> 
+    <title>super contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>titulo</h1>
+        <h1>vamos contar</h1>
     </header>
     <section>
-        <div>
-            testando
+        <div id="dados">
+            <p>inicio <input type="number" name="inicio" id="txti"> </p> 
+
+            <p>fim <input type="number" name="fim" id="txtf"> </p>
+
+            <p>passo <input type="number" name="passo" id="txtp"> </p>
+
+            <input type="button" value="contar" onclick="contar()">
         </div>
 
-        <div>
-            olá
+        <div id="res">
+            preparando a contagem
         </div>
 
     </section>
