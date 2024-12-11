@@ -1,10 +1,15 @@
 let num = [8,30,40,67]
 
-num.push(1) // coloca o numero desejado no ultimo elemento
-
 num.sort() //coloca em ordem crescente 
 
+num.push(1) // coloca o numero desejado no ultimo elemento
+
+
+
 console.log(num)
+
+let pos = num.indexOf(40)
+console.log(`o valor 40 está na posição ${pos}`)
 
 console.log(`Nosso vetor é o ${num}`)
 
