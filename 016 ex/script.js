@@ -29,7 +29,8 @@ if (isNumero(num.value)&& !inlista(num.value, valores)){
     valores.push(Number(num.value))  /* push - adicionar */
     let item = document.createElement('option')
     item.text = `Valor ${num.value} foi adicionado`
-    lista.appendChild(item  )
+    lista.appendChild(item)
+    res.innerHTML = '' /*limpar o resultado depois de finalizar*/
 }
 
     else{
@@ -47,9 +48,28 @@ function finalizar () {
         {window.alert('Adicione valores antes de finalizar')}
     else {
         let total  = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma  = 0
+        let media = 0 
 
+        for(let pos in valores) {
+            soma += valores[pos]
+            if(valores[pos] > maior)
+                maior = valores[pos]
+
+            if (valores[pos]< menor)
+                menor = valores[pos]
+        }
+
+
+        media  = soma / total
         res.innerHTML = ''
-        res.innerHTML +=   `'<p> ao todo temos ${}</p>  `
+        res.innerHTML +=    `<p> Ao todo temos ${total} números cadastrados</p>  `
+        res.innerHTML +=    `<p> o maior valor informado foi  ${maior} </p>  `
+        res.innerHTML +=    `<p> o menor valor informado foi  ${menor} </p>  `
+        res.innerHTML +=    `<p>somando todos os valores temos ${soma}</p>`
+        res.innerHTML +=    `<p>a media dos valores digitados é ${soma}</p>`
 
     }
 }
