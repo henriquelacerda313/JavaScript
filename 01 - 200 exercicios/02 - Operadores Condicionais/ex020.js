@@ -3,6 +3,8 @@ Exercício 20: Escreva um programa que imprime uma classificação baseada na no
 
 A nota máxima é 100, sendo 0 a 59(F), 60 a 69(D), 70 a 79(C), 80 a 89(B) e 90 a 100(A)
 
+**minha tentativa**
+
 */
 
 function calcularNota (nota) {
