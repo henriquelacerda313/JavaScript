@@ -41,7 +41,7 @@ function cadastrar() {
     id: Date.now(),
     nome,
     idade
-  });
+   });
 
   salvarUsuarios(usuarios);
   listar();
